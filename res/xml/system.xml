@@ -21,31 +21,11 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-         <PreferenceScreen
-            android:key="oneplusdoze"
-            android:layout="@layout/preference_oneplusdoze"
-            android:title="@string/oneplusdoze_category" >
-            <intent
-                android:action="com.android.settings.action.EXTRA_SETTINGS"
-                android:targetPackage="com.cyanogenmod.settings.doze"
-                android:targetClass="com.cyanogenmod.settings.doze.DozeSettings" />
-         </PreferenceScreen>
-
          <Preference
             android:key="expanded_desktop"
             android:fragment="com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop"
             android:layout="@layout/preference_expanded_desktop"
             android:title="@string/expanded_desktop_category" />
-
-         <PreferenceScreen
-            android:key="oneplus_gestures"
-            android:layout="@layout/preference_oneplus_gestures"
-            android:title="@string/oneplusdoze_category" >
-            <intent
-                android:action="com.android.settings.action.EXTRA_SETTINGS"
-                android:targetPackage="com.cyanogenmod.settings.device"
-                android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
-         </PreferenceScreen>
 
          <Preference
             android:key="misctweaks"
@@ -59,8 +39,8 @@
             android:title="@string/motoactions_category" >
             <intent
                 android:action="com.android.settings.action.EXTRA_SETTINGS"
-                android:targetPackage="com.dirtyunicorns.settings.device"
-                android:targetClass="com.dirtyunicorns.settings.device.TouchscreenGestureSettings" />
+                android:targetPackage="com.cyanogenmod.settings.device"
+                android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
          </PreferenceScreen>
 
          <Preference
